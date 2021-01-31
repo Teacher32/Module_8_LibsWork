@@ -31,6 +31,21 @@ public class Main {
         Date date8 = new Date();
         date8.setTime(2);                               // задали количество миллисекунд 2.
         System.out.println(date8.getTime());            // выведет 2
+
+        System.out.println("********** Далее идут методы класса Calendar **********");
+
+        Calendar calendar = Calendar.getInstance();     // с помощью этой строки получаем все параметры текущего момента времени (год, месяц, время и т.п.)
+        // System.out.println(calendar);
+        // int era = calendar.get(Calendar.ERA);
+        // System.out.println(era);
+        int year = calendar.get(Calendar.YEAR);
+        System.out.println("Сейчас на дворе " + year + "-й год.");
+        int month = calendar.get(Calendar.MONTH);
+        System.out.println("Сейчас " + (month + 1) + "-й месяц."); // январь - это нулевой месяц (!), а декабрь - 11-ый (!)
+        int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
+        System.out.println("Сегодня " + dayOfMonth + "-ое число.");
+        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+        System.out.println("Сегодня " + (dayOfWeek + 1) + "-й день недели.");   // неделя начинается с воскресенья (!)
     }
 
 }
