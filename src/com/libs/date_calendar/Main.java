@@ -2,6 +2,7 @@ package com.libs.date_calendar;
 
 import java.util.Date;
 import java.util.Calendar;
+import java.text.SimpleDateFormat;
 
 public class Main {
     public static void main(String[] args) {
@@ -46,6 +47,12 @@ public class Main {
         System.out.println("Сегодня " + dayOfMonth + "-ое число.");
         int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
         System.out.println("Сегодня " + (dayOfWeek + 1) + "-й день недели.");   // неделя начинается с воскресенья (!)
+
+        System.out.println("********** Использование класса SimpleDateFormat **********");
+        calendar.setTimeInMillis(999L);
+        // SimpleDateFormat dateFormat = new SimpleDateFormat("E MMM dd HH:mm:ss ZZ yyyy");
+        // System.out.println(dateFormat.format(calendar.getTime()));
+        System.out.println(calendar.getTime());
     }
 
 }
