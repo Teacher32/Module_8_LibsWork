@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Module_8_LibsWork:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Module_8_LibsWork_jar</output-path>
+    <root id="archive" name="Module_8_LibsWork.jar">
+      <element id="module-output" name="Module_8_LibsWork" />
+    </root>
+  </artifact>
+</component>
